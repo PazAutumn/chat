@@ -12,7 +12,7 @@ const io = socketIo(server);
 // Middleware
 app.use(cookieParser());
 app.use(morgan('dev'));
-app.use(express.static(path.join(__dirname, '../public'))); // Opcional para servir HTML
+app.use(express.static(path.join(__dirname, '../public/'))); // Opcional para servir HTML
 
 // Importar configuración de sockets
 require('./sockets')(io);
