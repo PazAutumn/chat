@@ -19,7 +19,7 @@ require('./sockets')(io);
 
 // Ruta principal para servir HTML
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+    res.sendFile(path.join(__dirname, '../index.html'));
 });
 
 app.post('/login', (req, res) => {
